@@ -15,7 +15,6 @@ for (i=0; i<food.length; i++) {
   if(food[i] == ' '){
     dashesArr[i] = ' ';
   }
-
 }
 
 //did not include in the for loop above so that it would include spaces
@@ -25,6 +24,7 @@ document.getElementById('word-header').innerHTML += `<span class="word-character
 
 //event lister for key up 
 document.addEventListener('keyup', function(event) {
+  console.log(event.key);
   userKey = event.key;
   foodArr = food.split('');
 
@@ -33,7 +33,7 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
 
   //if the user guesses correctly
       if(foodArr.indexOf(userKey)>=0 && foodArr.indexOf(userKey) != dashesArr.indexOf(userKey)) {
-
+        document.getElementById('correct').textContent = "GOOD GUESS";
         //loops through both arrays replaces underscores with correct guess, will replace multiple letters if they are the same 
         for(i=0; i<foodArr.length;i++) {
           if(foodArr[i] ==  event.key) {
@@ -56,9 +56,11 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
         guessesLeft -= 1;
 
       } else if(foodArr.indexOf(userKey)>=0 && foodArr.indexOf(userKey) == dashesArr.indexOf(userKey)) {
+        document.getElementById('correct').textContent = "YOU ALREADY GUESSED THAT";
         console.log("you already picked that letter");
       }else {
         console.log("incorrect guess");
+        document.getElementById('correct').textContent = "WRONG GUESS";
         guesses = guesses + 1;
         guessesLeft -= 1;
       }
@@ -71,6 +73,14 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
     guesses = 0;
     guessesLeft = 10;
     dashesArr=[];
+    // document.querySelector('.default').style.display = 'none';
+    // document.querySelector('.looser').style.display = 'block';
+    // document.querySelector('.winner').style.display = 'none';
+    food = food.toUpperCase();
+    document.getElementById('correct').textContent = `YOU LOOSE the correct word was: ${food} press any key to play again`;
+    food = food.toLowerrCase();
+    
+
 
     //repeat code will refactor
     document.getElementById('word-header').innerHTML = ``;
@@ -98,6 +108,10 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
         guessesLeft = 10;
         wins = wins +1;
         dashesArr = [];
+
+        //winning message
+
+        document.getElementById('correct').textContent = 'YOUWIN!!! :) Press Any Key to Play Again';
 
       // repeat code will refactor in the future
       document.getElementById('word-header').innerHTML = ``;
