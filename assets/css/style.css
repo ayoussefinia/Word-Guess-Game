@@ -1,0 +1,16 @@
+#word-container {
+  background-color: lightskyblue;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#word-header {
+  color: green;
+  font-size: 2rem;
+}
+
+.word-character {
+  padding-left: 15px;
+}
