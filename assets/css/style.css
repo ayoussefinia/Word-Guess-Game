@@ -115,11 +115,11 @@
 
 }
 
-/* .default {
+.default {
   display:block;
 }
 
-.winner {
+/*.winner {
  
   display: none;
   background-color: rgba(10, 248, 10, 0.116);

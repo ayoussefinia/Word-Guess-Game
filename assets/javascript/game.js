@@ -78,7 +78,7 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
     // document.querySelector('.winner').style.display = 'none';
     food = food.toUpperCase();
     document.getElementById('correct').textContent = `YOU LOOSE the correct word was: ${food} press any key to play again`;
-    food = food.toLowerrCase();
+    //comment
     
 
 
