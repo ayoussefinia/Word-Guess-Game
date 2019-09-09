@@ -3,7 +3,7 @@
 superFoods = ['avocado', 'broccoli', 'blueberries', 'spinach', 'salmon', 'turmeric', 'dark chocolate', 'chia seeds', 'kale'];
 
 //global vars
-guessesLeft = 10;
+guessesLeft = 15;
 guesses =0;
 dashesArr =[];
 wins=0;
@@ -71,7 +71,7 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
   if(guessesLeft == 0) {
     console.log("you loose :(");
     guesses = 0;
-    guessesLeft = 10;
+    guessesLeft = 15;
     dashesArr=[];
     // document.querySelector('.default').style.display = 'none';
     // document.querySelector('.looser').style.display = 'block';
@@ -105,7 +105,7 @@ if(guessesLeft > 0 && dashesArr.indexOf('_') >= 0) {
   if(dashesArr.indexOf('_') < 0) {
         console.log("YOU WIN!!!");
         guesses = 0;
-        guessesLeft = 10;
+        guessesLeft = 15;
         wins = wins +1;
         dashesArr = [];
 

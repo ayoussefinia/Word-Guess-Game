@@ -5,49 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="large-hero">
+  <div class="el1"></div>
+  <div class="el2">
+    <div class="large-hero">
 
-  </div>
-  <div id="word-container">
-    <h3 id="word-header">
-    </h3>
-  </div>
-  <div class="nav">
-    <h1 class="navtitle">Super Food Guessing GAME</h1>
-  </div>
-  <div class="instructions">
-    <h2 class="instrunctions-title">
-      Guess one letter at a time until you complete the word!
-    </h2>
-  </div>
-  <div class="secondary-instrunction">
-      <h2 class="secondary-title">
-        Press any key to begin
+    </div>
+    <div id="word-container">
+      <h3 id="word-header">
+      </h3>
+    </div>
+    <div class="nav">
+      <h1 class="navtitle">Super Food - Name Guessing Game</h1>
+    </div>
+    <div class="instructions">
+      <h2 class="instrunctions-title">
+        
       </h2>
-  </div>
-  <div class="statscontainer">
-    <div class="stats">
-      <h3 class="stat-header" >Wins: <span id="wins"></span></h3>
+    </div>
+    <div class="secondary-instrunction">
+        <h2 class="secondary-title">
+          Press any key to begin
+        </h2>
+    </div>
+    <div class="statscontainer">
+      <div class="stats">
+        <h3 class="stat-header" >Wins: <span id="wins"></span></h3>
 
-        <h3 class="stat-header">Guesses Remaining: <span id="guesses-left"></span></h3>
+          <h3 class="stat-header">Guesses Remaining: <span id="guesses-left"></span></h3>
 
-        <h3 class="stat-header" >you have guessed <span id="guesses"></span> times</h3>
+          <h3 class="stat-header" >you have guessed <span id="guesses"></span> times</h3>
+      </div>
+      <div class="helper default">
+          <h3 class="stat-header" >?<span id="correct"></span>?</h3>
+      </div>
+      <div class="helper winner">
+          <h3 class="stat-header" >?<span id="correct"></span>?</h3>
+      </div>
+      <div class="helper looser">
+          <h3 class="stat-header" >?<span id="correct"></span>?</h3>
+      </div>
     </div>
-    <div class="helper default">
-        <h3 class="stat-header" >?<span id="correct"></span>?</h3>
-    </div>
-    <div class="helper winner">
-        <h3 class="stat-header" >?<span id="correct"></span>?</h3>
-    </div>
-    <div class="helper looser">
-        <h3 class="stat-header" >?<span id="correct"></span>?</h3>
-    </div>
-  </div>
-
+</div>
 <script src="assets/javascript/game.js"> </script>
 </body>
 </html>
