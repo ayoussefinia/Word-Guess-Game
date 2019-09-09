@@ -207,7 +207,7 @@ body {
     font-size: 3rem;
   }
   .wins {
- 
+  
     bottom: 5vh;
 
   }
@@ -283,20 +283,3 @@ body {
     font-size: 1.75rem;
   }
 }
-/*.winner {
- 
-  display: none;
-  background-color: rgba(10, 248, 10, 0.116);
-  opacity: .8;
-  color: white;
-  font-size: 3rem;
-}
-
-.looser {
-
-  display: none;
-  background-color: red;
-  opacity: .2;
-  color:white;
-  font-size:3rem;
-} */
