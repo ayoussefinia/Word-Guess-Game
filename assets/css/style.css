@@ -42,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   /* opacity: .3; */
-  
+  font-size: 1.55rem;
 }
 
 #word-header {
@@ -61,12 +61,13 @@ body {
   top:0;
   /* background-color:rgb(65, 65, 65);
   opacity: .7; */
-  height: 25vh;
+  height: 15vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 3.5rem;
 }
 
 .instructions {
@@ -85,7 +86,7 @@ body {
 .secondary-instrunction {
   z-index:2;
   position: absolute;
-  top:25vh;
+  top:15vh;
   /* opacity: .5; */
 
   height: 10vh;
@@ -96,7 +97,7 @@ body {
 }
 
 .navtitle {
-  padding: 1rem;
+
   color: rgb(255, 137, 137);
   font-size: 4rem;
   font-weight: 100;
@@ -108,6 +109,7 @@ body {
   font-weight: 50;
 }
 .secondary-title {
+  text-align: center;
   color: rgb(255, 194, 137);
   font-size: 2.5rem;
   padding: 1rem;
@@ -115,13 +117,11 @@ body {
 
 .statscontainer {
   position: absolute;
-  top:35vh;
+  top:30vh;
   z-index:2;
-
   font-size: 2.5rem;
   width: 100%;
-  height: 50vh;
-
+  height: 65vh;
 }
 
 .stats {
@@ -161,7 +161,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-size: 1.55rem;
 
 }
 
@@ -169,6 +169,120 @@ body {
   display: block;
 }
 
+.wins {
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+  font-size: 1.75rem;
+}
+.guess-left {
+  position: absolute;
+  bottom: 20vh;
+  left: 2rem;
+  width: 25vw;
+  font-size: 1.75rem;
+}
+
+.guess-number {
+  position: absolute;
+  bottom: 20vh;
+  right: 1.5rem;
+  width: 25vw;
+  font-size: 1.75rem;
+}
+
+#guesses {
+  margin-left: 1rem;
+  color: rgb(137, 233, 255);
+}
+#wins {
+  margin-left: 1rem;
+  color: rgb(137, 233, 255);
+}
+#guesses-left {
+  color: rgb(137, 233, 255);
+}
+@media (min-width: 1000px) {
+  .navtitle {
+    font-size: 3rem;
+  }
+  .wins {
+ 
+    bottom: 5vh;
+
+  }
+}
+@media (max-width: 800px) {
+  .navtitle {
+    font-size: 3rem;
+  }
+  .nav {
+    height: 20vh;
+  }
+  .secondary-instrunction {
+    top: 20vh;
+  }
+  .statscontainer {
+    top: 30vh;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 650px){
+  .stat-header {
+    font-size: 1.25rem;
+  }
+  .secondary-title {
+    font-size: 2rem;
+  }
+  .navtitle {
+    font-size: 2.25rem;
+  }
+  #word-container {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 400px){
+  #word-container{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .stat-header {
+    font-size: .8rem;
+  }
+  .secondary-title {
+    font-size: 1.35rem;
+  }
+  .navtitle {
+    font-size: 1.65rem;
+  }
+  #word-container {
+    font-size: .8rem;
+    /* padding: 1rem; */
+  }
+  .wins {
+    position: absolute;
+    bottom: 10vh;
+    left: 1.5rem;
+    font-size: 1.75rem;
+  }
+  .guess-left {
+    position: absolute;
+    bottom: 30vh;
+    left: 1.5rem;
+    width: 25vw;
+    font-size: 1.75rem;
+  }
+  
+  .guess-number {
+    position: absolute;
+    bottom: 20vh;
+    left: 1.5rem;
+    width: 25vw;
+    font-size: 1.75rem;
+  }
+}
 /*.winner {
  
   display: none;
